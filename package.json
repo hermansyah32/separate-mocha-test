@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/*.test.js --exit",
-    "test-single": "mocha --exit"
+    "test-single": "mocha --exit",
+    "test-env": "mocha -r dotenv/config tests/*.test.js --exit dotenv_config_path=./.env.testing",
+    "test-single-env": "mocha -r dotenv/config --exit dotenv_config_path=./.env.testing"
   },
   "keywords": [],
   "author": "",
