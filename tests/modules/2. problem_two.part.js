@@ -10,4 +10,8 @@ const problem_two_test = (c) => {
   };
 };
 
+if (process.env.TEST_MODE !== "batch") {
+  describe("problem one", problem_two_test(4).bind(this));
+}
+
 module.exports = problem_two_test;
