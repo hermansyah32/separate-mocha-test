@@ -3,7 +3,7 @@ const { expect } = require("chai");
 
 const problem_three_test = () => {
   it("has to be 10", () => {
-    const result = sumData(2, 2, process.env.STATIC_NUMBER);
+    const result = sumData(2, 2, Number(process.env.STATIC_NUMBER));
     expect(result).eql(10);
   });
 };
